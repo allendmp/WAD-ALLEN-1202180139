@@ -40,9 +40,9 @@
         $harga = 200;
     }
 $harga = $harga*$durasi;
-    if ($services != "no service"){
+    if ($services != "no service");{
         foreach ($services as $value){
-            $harga = $harga + (20 * $durasi);
+            $harga = $value + (20 * $durasi);
         }
     }
     ?>
@@ -62,7 +62,7 @@ $harga = $harga*$durasi;
                     <th>Total Price</th>
                 </tr>
                 <tr>
-                <td> <?php echo(rand(1000,9999)); ?></td>
+                <td> <?php (rand(1000,9999)); ?></td>
                 <td> <?php echo $nama ?> </td>
                 <td> <?php echo $tanggal ?> </td>
                 <td> <?php echo $checkout ?> </td>

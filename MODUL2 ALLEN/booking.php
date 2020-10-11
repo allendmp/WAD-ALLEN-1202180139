@@ -29,7 +29,7 @@
   <div class="container">
     <div class="row">
       <div class="col-6">
-        <form action="my_booking.php" method="post">
+        <form action="my_booking.php" metohd="get">
           <div class="form-group">
             <label for="exampleFormControlInput1">Name</label>
             <input type="name" class="form-control" id="exampleFormControlInput1" name="nama">
@@ -46,7 +46,7 @@
             </small>
           </div>
           <?php
-          if (isset($_GET['tipe'])) {
+          if (false) {
             echo '
 				<div class="form-group">
 					<label for="exampleFormControlSelect1">Room type</label>

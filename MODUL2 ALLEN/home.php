@@ -42,7 +42,7 @@
     
   </ul>
   <div class="card-footer" style="text-align: center;">
-  <form action="booking.php" method="get">
+  <form action="booking.php" method="post">
   
 <input type="hidden" value="Standard" name="tipe">
 <button class="btn btn-primary">Book now</a>
@@ -69,7 +69,7 @@
     
   </ul>
   <div class="card-footer" style="text-align: center;">
-  <form action="booking.php" method="get">
+  <form action="booking.php" method="post">
   
 <input type="hidden" value="Superior" name="tipe">
 <button class="btn btn-primary">Book now</a>
@@ -98,7 +98,7 @@
     
   </ul>
   <div class="card-footer" style="text-align: center;">
-  <form action="booking.php" method="get">
+  <form action="booking.php" method="post">
   
 <input type="hidden" value="Luxury" name="tipe">
 <button class="btn btn-primary">Book now</a>
