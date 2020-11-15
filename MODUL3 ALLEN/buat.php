@@ -39,7 +39,7 @@ $select = mysqli_query($conn, $query);
     </nav>
 
     <h5 style="text-align:center; color:cornflowerblue;">Buat Event</h5>
-    <form action="Create.php" method="post" enctype="multipart/form-data">
+    <form action="Create.php" method="get" enctype="multipart/form-data">
     <div class="container mt-5 d-flex justify-content-center">
 
         <div class="col-6">

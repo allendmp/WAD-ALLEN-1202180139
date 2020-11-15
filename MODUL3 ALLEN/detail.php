@@ -14,8 +14,7 @@
         include ('config.php');
         include_once('update.php');
         $id = $_GET['id'];
-        $query = "SELECT * FROM event_table WHERE id = $id";
-        $select = mysqli_query($conn, $query);
+        $query = "SELECT * FROM event_table WHERE id = $id";      
 
         if(isset($_POST['submit'])){
             update($id,$_POST);

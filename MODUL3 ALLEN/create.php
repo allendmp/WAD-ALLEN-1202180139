@@ -25,7 +25,7 @@ if(isset($_POST['submit'])){
             $img = basename($img);
             $path = "foto/$img";
             move_uploaded_file($temp,$path);
-            $query = "INSERT INTO event_table VALUES(NULL,'$name','$deskripsi','$img','$kategori','$tanggal','$mulai','$berakhir','$tempat','$harga','$benefit')";
+            $query = "INSERT INTO event_table VALUE(NULL,'$name','$deskripsi','$img','$kategori','$tanggal','$mulai','$berakhir','$tempat','$harga','$benefit')";
             
             mysqli_query($conn, $query);
 

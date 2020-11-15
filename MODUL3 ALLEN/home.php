@@ -1,5 +1,5 @@
 <?php
-include('config.php');
+
 ?>
 
 <!doctype html>
@@ -64,7 +64,7 @@ include('config.php');
                         </div>
 
                         <div class="card-footer bg-transparent">
-                            <a href="detail.php?id=<?= $display['id']; ?>">
+                            <a href="detail.php?id=<? $display['id']; ?>">
                                 <p style="text-align: center;"><button type="button" class="btn btn-primary"> Lihat Detail</button></p>
                             </a>
                         </div>
