@@ -63,11 +63,11 @@ $harga = $harga*$durasi;
                 </tr>
                 <tr>
                 <td> <?php (rand(1000,9999)); ?></td>
-                <td> <?php echo $nama ?> </td>
-                <td> <?php echo $tanggal ?> </td>
-                <td> <?php echo $checkout ?> </td>
-                <td> <?php echo $tipe ?> </td>
-                <td> <?php echo $hp ?> </td>
+                <td> <?php echo "$nama"; ?> </td>
+                <td> <?php echo "$tanggal"; ?> </td>
+                <td> <?php echo "$checkout"; ?> </td>
+                <td> <?php echo "$tipe"; ?> </td>
+                <td> <?php echo "$hp"; ?> </td>
                 <td> <?php
 							if ($services == "no service") {
 								echo($services);

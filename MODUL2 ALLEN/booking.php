@@ -46,7 +46,7 @@
             </small>
           </div>
           <?php
-          if (false) {
+          if (isset($_GET['tipe'])) {
             echo '
 				<div class="form-group">
 					<label for="exampleFormControlSelect1">Room type</label>
