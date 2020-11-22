@@ -1,6 +1,6 @@
 <?php 
 
-include 'connection.php';
+
 session_start();
 
 
@@ -12,11 +12,11 @@ $_SESSION['nama'] = $_POST['nama'];
 $_SESSION['no_hp'] = $_POST['no_hp'];
 $cookie_name = 'warna';
 $cookie_value = $_POST['warna'];;
-setcookie($cookie_name, $cookie_value);
+
  
  
 
-$query = mysqli_query($koneksi,"UPDATE `user` SET `nama`='$nama',`no_hp`='$no_hp',`password`='$password' WHERE `id`='$id'");
+$query = mysqli_query($koneksi,"UPDATE user SET `nama`='$nama',`no_hp`='$no_hp',`password`='$password' WHERE `id`='$id'");
  
 if($query){
 	header( "refresh:0;url=profile.php?message=success" );

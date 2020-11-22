@@ -2,7 +2,7 @@
 include 'connection.php';
 session_start();
 if($_GET['aksi']=="tambah"){
-	$user_id = $_SESSION['user_id'];
+	$user_id = $_SESSION[$user_id];
 	$nama_barang = $_GET['nama_barang'];
 	$harga = $_GET['harga'];
 	
