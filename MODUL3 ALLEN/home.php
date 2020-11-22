@@ -1,5 +1,5 @@
 <?php
-
+include('config.php');
 ?>
 
 <!doctype html>
@@ -41,7 +41,9 @@
     <div class="container">
 
         <?php
-        $data = mysqli_query($conn, "SELECT * FROM event_table");
+        $query = "SELECT * FROM event_table";
+        $data = mysqli_query($conn, $query);
+
         if (mysqli_num_rows($data) == 0) { ?>
             <div class=" d-flex justify-content-center align-items-center">
                 <h4>No event found</h4>
