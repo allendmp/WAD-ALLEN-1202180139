@@ -1,5 +1,5 @@
-<?php 
 include 'connection.php';
+<?php 
 session_start();
 if($_GET['aksi']=="tambah"){
 	$user_id = $_SESSION[$user_id];
