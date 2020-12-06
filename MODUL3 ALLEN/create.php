@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
     $filename = $_FILES['gambar']['name'];
     $temp = $_FILES['gambar']['tmp_name'];
     $pathinfo = pathinfo($filename, PATHINFO_EXTENSION);
-  
+
     if(!in_array($pathinfo,$ekstensi) ) {
         header("location:buat.php?alert=gagal_ekstensi");
     }else{	
@@ -25,8 +25,8 @@ if(isset($_POST['submit'])){
             $img = basename($img);
             $path = "foto/$img";
             move_uploaded_file($temp,$path);
-            $query = "INSERT INTO event_table VALUE(NULL,'$name','$deskripsi','$img','$kategori','$tanggal','$mulai','$berakhir','$tempat','$harga','$benefit')";
-            
+            $query = "INSERT INTO event_table VALUES(NULL,'$name','$deskripsi','$img','$kategori','$tanggal','$mulai','$berakhir','$tempat','$harga','$benefit')";
+
             mysqli_query($conn, $query);
 
             header("location:home.php?alert=berhasil");

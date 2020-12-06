@@ -14,12 +14,13 @@
         include ('config.php');
         include_once('update.php');
         $id = $_GET['id'];
-        $query = "SELECT * FROM event_table WHERE id = $id";      
+        $query = "SELECT * FROM event_table WHERE id = $id";
+        $select = mysqli_query($conn, $query);
 
         if(isset($_POST['submit'])){
             update($id,$_POST);
         }
-        
+
 ?>
 </head>
 
@@ -46,11 +47,11 @@
   <h5 style="text-align:center; color:cornflowerblue;">Detail Event</h5>
 
   <div class="container mt-5 d-flex justify-content-center">
-  
+
   <div class="col-6">
-    
+
     <div class="card mb-3">
-      
+
       <?php
       $id = $_GET['id'];
       $data = mysqli_query($conn, "SELECT * FROM event_table WHERE id=$id");
@@ -144,7 +145,7 @@
                                             Online
                                           </label>
                                         </div>
-                                        
+
                                         <div class="col">
                                           <input <?php echo ($display['kategori'] == 'Offline') ? 'checked' : '' ?> class="form-check-input" type="radio" name="kategori[]" id="gridRadios2" value="Offline" action="">
                                           <label class="form-check-label" for="offline">
@@ -234,13 +235,13 @@
 
                         </div>
                       </div>
-                    
+
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                     <button type="submit" class="btn btn-primary" name="submit">Save Changes</button>
                     </form>  
-                    
+
                   </div>
                 </div>
               </div>
@@ -248,15 +249,15 @@
 
         </div>
 
-        
+
       <?php
       }
       ?>
 
     </div>
-  
+
   </div>
-  
+
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -270,4 +271,4 @@
     -->
 </body>
 
-</html>
+</html> 

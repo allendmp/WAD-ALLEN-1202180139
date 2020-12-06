@@ -22,9 +22,9 @@ if (isset($_POST['submit'])) {
     $filename = $_FILES['gambar']['name'];
     $temp = $_FILES['gambar']['tmp_name'];
     $pathinfo = pathinfo($filename, PATHINFO_EXTENSION);
-  
 
-    
+
+
 }
 
 if(!in_array($pathinfo,$ekstensi) ) {
@@ -42,4 +42,4 @@ if(!in_array($pathinfo,$ekstensi) ) {
 
         header("location:home.php?alert=berhasil");
     }
-}
+} 

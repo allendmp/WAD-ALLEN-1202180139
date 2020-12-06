@@ -41,9 +41,7 @@ include('config.php');
     <div class="container">
 
         <?php
-        $query = "SELECT * FROM event_table";
-        $data = mysqli_query($conn, $query);
-
+        $data = mysqli_query($conn, "SELECT * FROM event_table");
         if (mysqli_num_rows($data) == 0) { ?>
             <div class=" d-flex justify-content-center align-items-center">
                 <h4>No event found</h4>
@@ -66,7 +64,7 @@ include('config.php');
                         </div>
 
                         <div class="card-footer bg-transparent">
-                            <a href="detail.php?id=<? $display['id']; ?>">
+                            <a href="detail.php?id=<?= $display['id']; ?>">
                                 <p style="text-align: center;"><button type="button" class="btn btn-primary"> Lihat Detail</button></p>
                             </a>
                         </div>
@@ -90,4 +88,4 @@ include('config.php');
     -->
 </body>
 
-</html>
+</html> 

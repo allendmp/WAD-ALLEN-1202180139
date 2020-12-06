@@ -7,4 +7,4 @@ $query="DELETE from event_table where id='$id'";
 mysqli_query($conn, $query);
 // mengalihkan ke halaman index.php
 header("location:home.php");
-?>
+?> 

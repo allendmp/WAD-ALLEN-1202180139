@@ -1,4 +1,5 @@
 <?php 
+session_start();
 if(!isset($_SESSION['loginTime'])){ 
 	header( "refresh:0;url=login.php" );
 }else{	
