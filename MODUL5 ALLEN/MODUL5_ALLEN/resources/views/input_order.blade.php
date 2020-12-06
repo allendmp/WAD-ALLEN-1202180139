@@ -27,7 +27,6 @@
         <h2> Buyer Information </h2>
     </center>
     <form action="/makeOrder" method="post" enctype="multipart/form-data">
-        @csrf
         <div class="form-group">
             <label for="buyer_name">Name</label>
             <input type="text" class="form-control" id="buyer_name" placeholder="Name" name="buyer_name">

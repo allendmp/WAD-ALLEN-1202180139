@@ -16,7 +16,7 @@ class ProductController extends Controller
     {
         $products = Product::all();
 
-        return view('Product', compact('products'));
+        return view('Product');
     }
 
     public function updateIndex($id)

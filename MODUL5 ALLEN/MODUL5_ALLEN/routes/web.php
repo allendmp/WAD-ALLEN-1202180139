@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\OrderController;
 
@@ -51,4 +51,4 @@ Route::post('/makeOrder', [OrderController::class, 'create']);
 
 
 //history
-Route::get('/history', [OrderController::class, 'indexHistory']);
+Route::post('/history', [OrderController::class, 'indexHistory']);
